@@ -1,0 +1,15 @@
+<div class="actions-container">
+  <div class="change-container-size change-container-size-right">
+    <button
+      [disabled]="layoutService.tiles[1].cols === 4"
+      mat-raised-button (click)="layoutService.changeLayoutSizes('right')">
+      <span class="material-icons">
+        chevron_right
+      </span>
+    </button>
+  </div>
+
+  <div>
+    <h2>Hello World</h2>
+  </div>
+</div>

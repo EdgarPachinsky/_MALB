@@ -1,13 +1,17 @@
 <mat-grid-list
-  [cols]="12"
+  [cols]="MAT_GRID_LIST_MAX_COLS"
+  [rowHeight]="rowHeightForMatGridList"
 >
-  @for (tile of tiles; track tile) {
+  @for (tile of layoutService.tiles; track tile) {
     <mat-grid-tile
       [colspan]="tile.cols"
       [rowspan]="tile.rows"
       [style.background]="tile.color">
       @if(tile.componentForPortal){
-        <ng-template [cdkPortalOutlet]="createComponentPortal(tile.componentForPortal)"></ng-template>
+        <div class="portal-container">
+          <ng-template [cdkPortalOutlet]="createComponentPortal(tile.componentForPortal)">
+          </ng-template>
+        </div>
       }
     </mat-grid-tile>
   }

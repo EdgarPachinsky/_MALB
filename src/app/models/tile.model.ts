@@ -1,6 +1,7 @@
 import {Type} from "@angular/core";
 
-export interface Tile {
+export interface TileModel {
+  id: string;
   color: string;
   cols: number;
   rows?: number;

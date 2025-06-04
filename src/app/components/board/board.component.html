@@ -1,0 +1,13 @@
+<div class="board-container">
+  <div class="change-container-size change-container-size-left">
+    <button
+      [disabled]="layoutService.tiles[0].cols === 4"
+      mat-raised-button (click)="layoutService.changeLayoutSizes('left')">
+      <span class="material-icons">
+        chevron_left
+      </span>
+    </button>
+  </div>
+
+  <canvas id="main-canvas"></canvas>
+</div>
