@@ -1,0 +1,14 @@
+<mat-grid-list
+  [cols]="12"
+>
+  @for (tile of tiles; track tile) {
+    <mat-grid-tile
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+      @if(tile.componentForPortal){
+        <ng-template [cdkPortalOutlet]="createComponentPortal(tile.componentForPortal)"></ng-template>
+      }
+    </mat-grid-tile>
+  }
+</mat-grid-list>
