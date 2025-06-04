@@ -1,4 +1,4 @@
-# 🧮 _MALB — Mathematics, Algorithms, Logic & Beauty
+# 🧮 _MALB (_M Λ L ∫) — Mathematics, Algorithms, Logic & Beauty
 
 > Combining math and visuals to explore the beauty of equations and motion.
 
